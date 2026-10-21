@@ -5,7 +5,8 @@ Máquina virtual oficial de Arch Linux configurada específicamente para el cicl
 ## 🚀 Enlaces y Descargas
 * 🌐 **Página Web / GitHub Pages**: [https://balejosg.github.io/archlinux-vm-asir/](https://balejosg.github.io/archlinux-vm-asir/)
 * 📖 **Caso de Estudio (Cómo se hizo con IA)**: [https://balejosg.github.io/archlinux-vm-asir/como-se-hizo.html](https://balejosg.github.io/archlinux-vm-asir/como-se-hizo.html)
-* 📦 **Descarga directa (.ova, ~1.8 GB)**: [ArchLinux-ASIR.ova (v1.0.0)](https://github.com/balejosg/archlinux-vm-asir/releases/download/v1.0.0/ArchLinux-ASIR.ova)
+* 📦 **Descarga directa (.ova, ~2.1 GB)**: [ArchLinux-ASIR.ova (v1.0.0)](https://github.com/balejosg/archlinux-vm-asir/releases/download/v1.0.0/ArchLinux-ASIR.ova)
+  * **Checksum SHA-256**: `9b5f709f2457b1d311ff4f57feb239f28441d4eff9bfb6fce73bde05d36e0bbf`
 
 ---
 
