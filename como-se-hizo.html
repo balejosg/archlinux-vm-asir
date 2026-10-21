@@ -145,29 +145,52 @@
         </h3>
       </div>
 
-      <!-- Step 1: Request -->
-      <div class="bg-slate-800/50 border border-slate-700/70 rounded-2xl p-6 space-y-4">
-        <div class="flex items-center justify-between">
-          <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Petición Docente</span>
-          <span class="text-xs bg-slate-800 text-slate-400 px-2.5 py-1 rounded-full font-mono">Paso 1</span>
+        <!-- Step 1: Request -->
+        <div class="bg-slate-800/50 border border-slate-700/70 rounded-2xl p-6 space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Petición Docente</span>
+            <span class="text-xs bg-slate-800 text-slate-400 px-2.5 py-1 rounded-full font-mono">Paso 1</span>
+          </div>
+
+          <div class="bg-slate-900 border border-emerald-900/50 rounded-xl p-4 text-sm text-emerald-100 flex items-start gap-3">
+            <span class="bg-emerald-500/20 text-emerald-300 p-1.5 rounded-lg text-xs font-bold shrink-0">PROFESOR</span>
+            <p class="italic">«haz una versión de este proyecto pero para mis alumnos de ASIR. Usarán la máquina para desarrollar proyectos tecnológico relacionados con la sostenibilidad https://github.com/balejosg/archlinux-vm»</p>
+          </div>
+
+          <div class="text-xs text-slate-300 space-y-2 pl-3 border-l-2 border-emerald-500">
+            <p class="font-semibold text-slate-200">🛠️ Decisiones de ingeniería ejecutadas por el Agente:</p>
+            <ul class="list-disc list-inside space-y-1.5 text-slate-400">
+              <li><strong>Reemplazo del Toolchain:</strong> Se sustituyó el entorno exclusivo de desarrollo Java por un stack de administración de sistemas y redes: Docker, Docker Compose, Mosquitto MQTT, PowerTOP, cpupower y herramientas de diagnóstico de tráfico (nmap, tcpdump, iperf3).</li>
+              <li><strong>Reconfiguración de Puertos NAT:</strong> Mapeo de puertos para servicios típicos de ASIR hacia el host: <code>2222</code> (SSH), <code>8080</code> (Web Nginx), <code>1883</code> (Broker MQTT), <code>3000</code> (Grafana) y <code>8086</code> (InfluxDB).</li>
+              <li><strong>Diseño del Rol "Green SysAdmin":</strong> Se reescribió <code>AGENTS.md</code> para que el agente enseñe conceptos de eco-diseño: penalizar bucles activos (*busy-waiting*) que queman vatios inútilmente, incentivar arquitecturas basadas en eventos (MQTT) y orientar el uso de imágenes ligeras en Docker.</li>
+              <li><strong>3 Proyectos Prácticos de Sostenibilidad:</strong> Se crearon ejemplos listos para ejecutar con código real (Smart Campus con telemetría de CO2 y luces, calculadora de huella de carbono digital en Python y gestor de políticas de energía con systemd).</li>
+              <li><strong>Portal Web y Documentación:</strong> Creación de la página interactiva para los alumnos en GitHub Pages con estética Green IT y descarga directa del archivo OVA.</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="bg-slate-900 border border-emerald-900/50 rounded-xl p-4 text-sm text-emerald-100 flex items-start gap-3">
-          <span class="bg-emerald-500/20 text-emerald-300 p-1.5 rounded-lg text-xs font-bold shrink-0">PROFESOR</span>
-          <p class="italic">«haz una versión de este proyecto pero para mis alumnos de ASIR. Usarán la máquina para desarrollar proyectos tecnológico relacionados con la sostenibilidad»</p>
-        </div>
+        <!-- Step 2: OVA Export & GitHub Pages -->
+        <div class="bg-slate-800/50 border border-slate-700/70 rounded-2xl p-6 space-y-4">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-teal-400 uppercase tracking-wider">Despliegue y Empaquetado</span>
+            <span class="text-xs bg-slate-800 text-slate-400 px-2.5 py-1 rounded-full font-mono">Paso 2</span>
+          </div>
 
-        <div class="text-xs text-slate-300 space-y-2 pl-3 border-l-2 border-emerald-500">
-          <p class="font-semibold text-slate-200">🛠️ Decisiones de ingeniería ejecutadas por el Agente:</p>
-          <ul class="list-disc list-inside space-y-1.5 text-slate-400">
-            <li><strong>Reemplazo del Toolchain:</strong> Se sustituyó el entorno exclusivo de desarrollo Java por un stack de administración de sistemas y redes: Docker, Docker Compose, Mosquitto MQTT, PowerTOP, cpupower y herramientas de diagnóstico de tráfico (nmap, tcpdump, iperf3).</li>
-            <li><strong>Reconfiguración de Puertos NAT:</strong> Mapeo de puertos para servicios típicos de ASIR hacia el host: <code>2222</code> (SSH), <code>8080</code> (Web Nginx), <code>1883</code> (Broker MQTT), <code>3000</code> (Grafana) y <code>8086</code> (InfluxDB).</li>
-            <li><strong>Diseño del Rol "Green SysAdmin":</strong> Se reescribió <code>AGENTS.md</code> para que el agente enseñe conceptos de eco-diseño: penalizar bucles activos (*busy-waiting*) que queman vatios inútilmente, incentivar arquitecturas basadas en eventos (MQTT) y orientar el uso de imágenes ligeras en Docker.</li>
-            <li><strong>3 Proyectos Prácticos de Sostenibilidad:</strong> Se crearon ejemplos listos para ejecutar con código real (Smart Campus con telemetría de CO2 y luces, calculadora de huella de carbono digital en Python y gestor de políticas de energía con systemd).</li>
-            <li><strong>Portal Web y Documentación:</strong> Creación de la página interactiva para los alumnos en GitHub Pages con estética Green IT y descarga directa del archivo OVA.</li>
-          </ul>
+          <div class="bg-slate-900 border border-teal-900/50 rounded-xl p-4 text-sm text-teal-100 flex items-start gap-3">
+            <span class="bg-teal-500/20 text-teal-300 p-1.5 rounded-lg text-xs font-bold shrink-0">PROFESOR</span>
+            <p class="italic">«subelo todo y haz una web a medida para la descarga»</p>
+          </div>
+
+          <div class="text-xs text-slate-300 space-y-2 pl-3 border-l-2 border-teal-500">
+            <p class="font-semibold text-slate-200">🛠️ Acciones autónomas del Agente:</p>
+            <ul class="list-disc list-inside space-y-1.5 text-slate-400">
+              <li><strong>Creación del repositorio GitHub:</strong> <code>balejosg/archlinux-vm-asir</code> creado y vinculado con Git.</li>
+              <li><strong>Alineación y compactado de disco:</strong> Rellenado con ceros de los bloques libres en ext4 para optimizar la compresión del OVA por debajo de los 2 GiB exigidos por la API de GitHub Releases.</li>
+              <li><strong>Exportación y Verificación:</strong> Generación de <code>ArchLinux-ASIR.ova</code> (1.9 GB) con checksum SHA-256 verificado.</li>
+              <li><strong>Publicación en Release oficial:</strong> Subida a GitHub Releases v1.0.0 y activación de GitHub Pages con el portal a medida.</li>
+            </ul>
+          </div>
         </div>
-      </div>
     </div>
 
     <!-- Educational Reflections -->
