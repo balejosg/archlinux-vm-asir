@@ -41,7 +41,7 @@ Fíjate en cómo la potencia salta de ~12W a más de 50W instantáneamente y có
 
 ---
 
-## 💡 Preguntas para el debate con tu Tutor IA
+## 💡 Preguntas para explorar con tu Asistente IA
 1. ¿Qué directivas de Nginx ayudan a reducir el consumo de CPU y ancho de banda al servir contenido estático?
 2. Si un script de copias de seguridad se ejecuta de noche, ¿es mejor que consuma el 100% de CPU durante 10 minutos o el 25% durante 40 minutos en términos de estrés térmico y consumo energético?
 3. ¿Cómo influye el mix energético (hora solar vs noche) en las emisiones de CO2 de un centro de datos en España?

@@ -1,12 +1,12 @@
 # Arch Linux VM para VirtualBox (Edición Especial ASIR - Green IT & Sostenibilidad)
 
-Máquina virtual oficial de Arch Linux configurada específicamente para el ciclo formativo de **ASIR (Administración de Sistemas Informáticos en Red)**. Diseñada para el desarrollo de **proyectos tecnológicos relacionados con la sostenibilidad, la eficiencia energética y la sensorización ambiental**, integrando un **tutor pedagógico de IA socrático** que orienta al alumno en la resolución de incidencias y buenas prácticas de sistemas sin darle las soluciones hechas.
+Máquina virtual oficial de Arch Linux configurada específicamente para el ciclo formativo de **ASIR (Administración de Sistemas Informáticos en Red)**. Diseñada para el desarrollo de **proyectos tecnológicos relacionados con la sostenibilidad, la eficiencia energética y la sensorización ambiental**, integrando un **asistente técnico de IA (Green SysAdmin)** que ayuda al alumno en el diseño de arquitecturas, resolución de incidencias y aplicación directa de buenas prácticas de sistemas.
 
 ## 🚀 Enlaces y Descargas
 * 🌐 **Página Web / GitHub Pages**: [https://balejosg.github.io/archlinux-vm-asir/](https://balejosg.github.io/archlinux-vm-asir/)
 * 📖 **Caso de Estudio (Cómo se hizo con IA)**: [https://balejosg.github.io/archlinux-vm-asir/como-se-hizo.html](https://balejosg.github.io/archlinux-vm-asir/como-se-hizo.html)
 * 📦 **Descarga directa (.ova, ~1.9 GB)**: [ArchLinux-ASIR.ova (v1.0.0)](https://github.com/balejosg/archlinux-vm-asir/releases/download/v1.0.0/ArchLinux-ASIR.ova)
-  * **Checksum SHA-256**: `73b186c90c45272901054b8059248e03f0bea2dc9434ec0a0aef56d958797fd1`
+  * **Checksum SHA-256**: `dbe44878857db3b6cbe110aa41a200919924595a00d6bb5999d84c5dfc5b3df9`
 
 ---
 
@@ -30,11 +30,11 @@ Máquina virtual oficial de Arch Linux configurada específicamente para el cicl
 
 ## 🌿 Entorno Pedagógico ASIR & Sostenibilidad
 
-### 1. Rol "Green SysAdmin" (Tutor Socrático de Sistemas)
+### 1. Rol "Green SysAdmin" (Asistente Técnico de Sistemas)
 Los agentes de IA preinstalados (`agy` y `opencode`) leen las directrices de `AGENTS.md`:
-* **Prohibido dar soluciones directas:** No escriben scripts completos ni archivos de configuración hechos si el alumno no ha reflexionado sobre la causa raíz.
-* **Diagnóstico Didáctico de Sistemas:** Explican permisos POSIX (`chmod`/`chown`), puertos ocupados, aislamiento de redes virtuales en Docker y errores en units de `systemd`.
-* **Criterio de Sostenibilidad (Green IT):** Hacen reflexionar sobre bucles inútiles (*busy-waiting*) que queman vatios inútilmente, el sobredimensionamiento de imágenes de Docker y el cálculo cuantitativo de la huella de carbono digital en gramos de CO2eq.
+* **Soluciones Claras y Directas:** Proporcionan archivos de configuración completos (`docker-compose.yml`, scripts de Bash/Python, units de `systemd`) listos para usar y explicados paso a paso.
+* **Diagnóstico Resolutivo de Sistemas:** Identifican permisos POSIX (`chmod`/`chown`), puertos ocupados, aislamiento de redes virtuales en Docker y errores en servicios de forma inmediata.
+* **Criterio de Sostenibilidad (Green IT):** Aplican optimizaciones de bajo consumo: prevención de bucles inútiles (*busy-waiting*), uso de imágenes ligeras en Docker y cálculo cuantitativo de la huella de carbono digital en gramos de CO2eq.
 
 ### 2. Catálogo de Proyectos Prácticos Incluidos
 Dentro de `~/trabajo/plantillas-sostenibilidad/` se incluyen tres proyectos listos para desplegar:
@@ -52,7 +52,7 @@ Dentro de `~/trabajo/plantillas-sostenibilidad/` se incluyen tres proyectos list
 │   └── 03-auto-power-management/
 ├── apuntes/                       <-- Guías docentes y apuntes del módulo
 ├── CRITERIOS_EVALUACION.md        <-- Rúbricas docentes de sistemas y sostenibilidad
-├── AGENTS.md                      <-- Reglas del rol socrático del agente
+├── AGENTS.md                      <-- Directrices técnicas del asistente IA
 └── LEEME.txt                      <-- Chuleta de ayuda rápida para el alumno
 ```
 

@@ -83,8 +83,8 @@ if ! command -v herdr >/dev/null 2>&1; then
     fi
 fi
 
-# 7. Configuración del Rol de Tutor Socrático para ASIR
-echo "[7/8] Instalando directrices pedagógicas de Green IT en los agentes..."
+# 7. Configuración del Asistente Técnico de IA para ASIR
+echo "[7/8] Instalando directrices técnicas de Green IT en los agentes..."
 USER_HOME="/home/alumno"
 
 mkdir -p "${USER_HOME}/.config/opencode"
@@ -93,8 +93,8 @@ mkdir -p "${USER_HOME}/.gemini/rules"
 
 if [ -f /tmp/AGENTS.md ]; then
     cp /tmp/AGENTS.md "${USER_HOME}/.config/opencode/AGENTS.md"
-    cp /tmp/AGENTS.md "${USER_HOME}/.gemini/antigravity-cli/rules/tutor-asir-sostenible.md"
-    cp /tmp/AGENTS.md "${USER_HOME}/.gemini/rules/tutor-asir-sostenible.md"
+    cp /tmp/AGENTS.md "${USER_HOME}/.gemini/antigravity-cli/rules/asistente-asir-sostenible.md"
+    cp /tmp/AGENTS.md "${USER_HOME}/.gemini/rules/asistente-asir-sostenible.md"
 fi
 
 # 8. Espacio de Trabajo (~/trabajo) y comando 'montar-trabajo'

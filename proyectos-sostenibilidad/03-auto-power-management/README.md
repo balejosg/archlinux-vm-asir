@@ -46,6 +46,6 @@ journalctl -u eco-power-manager.service -e
 
 ---
 
-## 💡 Preguntas para tu Tutor IA
+## 💡 Preguntas para explorar con tu Asistente IA
 1. ¿Cuál es la diferencia entre programar una tarea con `cron` y programarla con un `systemd.timer` con la directiva `Persistent=true`?
 2. Si un servidor en la nube te cobra por horas de uso de CPU o necesitas reducir la huella de carbono del centro escolar, ¿cómo planificarías el encendido y apagado de contenedores Docker mediante scripts similares?

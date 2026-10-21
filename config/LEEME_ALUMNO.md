@@ -62,4 +62,4 @@ Para editar tus scripts o configuraciones cómodamente con VS Code en tu equipo 
 ### 4. Agentes de Inteligencia Artificial
 * **Antigravity CLI**: `agy` (para sesiones agénticas avanzadas).
 * **OpenCode CLI**: `opencode` (alternativa 100% abierta y gratuita).
-* **Tutor Socrático**: Ambos agentes están instruidos para ayudarte a pensar la arquitectura de red y la eficiencia de tus sistemas sin darte la solución en bandeja.
+* **Asistente Técnico de Sistemas**: Ambos agentes están configurados como copilotos de sistemas para ayudarte a diseñar, configurar y resolver dudas técnicas de redes, contenedores y sostenibilidad de forma directa y eficaz.

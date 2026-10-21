@@ -67,7 +67,7 @@ python simulador_sensores.py
 
 ---
 
-## 💡 Retos de Aprendizaje para el Alumno (Consúltale a tu Tutor IA)
+## 💡 Retos de Aprendizaje para el Alumno (Explora con tu Asistente IA)
 1. **Reducción de consumo de red**: ¿Por qué MQTT con formato JSON o Protocol Buffers genera menos tráfico y huella energética que realizar peticiones HTTP POST continuas?
 2. **Seguridad y Sostenibilidad**: Configura autenticación con usuario y contraseña en Mosquitto (`mosquitto_passwd`) y desactiva el acceso anónimo.
 3. **Automatización de Ahorro**: Añade una función al script `gestor_alertas_eco.py` que envíe una orden MQTT en el tópico `campus/edificioA/aula101/actuador/luces/set` con valor `OFF` cuando el aula esté desierta.
