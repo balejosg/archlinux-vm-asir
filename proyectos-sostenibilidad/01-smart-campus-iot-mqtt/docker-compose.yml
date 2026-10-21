@@ -1,0 +1,77 @@
+services:
+  # Broker de mensajería MQTT ligero y eco-eficiente
+  mosquitto:
+    image: eclipse-mosquitto:2-alpine
+    container_name: eco-mosquitto
+    restart: unless-stopped
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - mosquitto_data:/mosquitto/data
+      - mosquitto_log:/mosquitto/log
+    networks:
+      - eco_net
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 64M
+
+  # Base de datos de series temporales para telemetría ambiental
+  influxdb:
+    image: influxdb:2.7-alpine
+    container_name: eco-influxdb
+    restart: unless-stopped
+    ports:
+      - "8086:8086"
+    environment:
+      - DOCKER_INFLUXDB_INIT_MODE=setup
+      - DOCKER_INFLUXDB_INIT_USERNAME=alumno
+      - DOCKER_INFLUXDB_INIT_PASSWORD=sostenibilidad2026
+      - DOCKER_INFLUXDB_INIT_ORG=asir-eco
+      - DOCKER_INFLUXDB_INIT_BUCKET=sensores_campus
+      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=eco-token-asir-super-secret-2026
+    volumes:
+      - influxdb_data:/var/lib/influxdb2
+    networks:
+      - eco_net
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 256M
+
+  # Visualización de métricas de sostenibilidad y calidad ambiental
+  grafana:
+    image: grafana/grafana:10.4.0
+    container_name: eco-grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana_data:/var/lib/grafana
+    networks:
+      - eco_net
+    depends_on:
+      - influxdb
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 256M
+
+networks:
+  eco_net:
+    name: eco_campus_net
+    driver: bridge
+
+volumes:
+  mosquitto_data:
+  mosquitto_log:
+  influxdb_data:
+  grafana_data:

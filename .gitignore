@@ -1,0 +1,9 @@
+*.vdi
+*.vmdk
+*.qcow2
+*.ova
+*.iso
+*.log
+__pycache__/
+*.pyc
+.env

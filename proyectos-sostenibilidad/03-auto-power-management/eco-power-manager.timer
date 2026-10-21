@@ -1,0 +1,11 @@
+[Unit]
+Description=Temporizador de Comprobacion Energetica Cada 15 Minutos (ASIR Green IT)
+Documentation=https://github.com/balejosg/archlinux-vm-asir
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=15min
+Persistent=true
+
+[Install]
+WantedBy=timers.target

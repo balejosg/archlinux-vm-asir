@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arch Linux VM (Edición ASIR - Green IT & Sostenibilidad) - VirtualBox</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    code, pre { font-family: 'Fira Code', monospace; }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen antialiased selection:bg-emerald-500 selection:text-white">
+
+  <!-- Header -->
+  <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-600 flex items-center justify-center font-bold text-white shadow-lg shadow-emerald-500/20">
+          🌱
+        </div>
+        <div>
+          <h1 class="font-bold text-lg leading-tight text-white">Arch Linux VM <span class="text-xs bg-emerald-950 text-emerald-400 border border-emerald-800/80 px-2 py-0.5 rounded-full ml-1">ASIR</span></h1>
+          <p class="text-xs text-emerald-400 font-medium">VirtualBox Appliance (.ova) • Green IT & Proyectos Sostenibles</p>
+        </div>
+      </a>
+      <div class="flex items-center gap-2 md:gap-3">
+        <a href="como-se-hizo.html" class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-gradient-to-r from-emerald-950/80 to-teal-950/80 border border-emerald-500/50 text-emerald-200 hover:text-white hover:border-emerald-400 transition flex items-center gap-1.5 shadow-sm">
+          <span>✨</span>
+          <span class="hidden sm:inline">Caso de estudio:</span> ¿Cómo se hizo?
+        </a>
+        <a href="https://github.com/balejosg/archlinux-vm-asir" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-700 hover:border-slate-600 text-slate-300 hover:text-white transition flex items-center gap-1.5">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="max-w-4xl mx-auto px-6 py-12">
+    <div class="text-center space-y-4">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-950/60 border border-emerald-800/60 text-emerald-300 text-xs font-medium">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Edición Especial ASIR • Docker, MQTT, PowerTOP & Tutor Socrático Green IT
+      </div>
+      <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
+        Máquina Virtual <br/>
+        <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Arch Linux ASIR Sostenible</span>
+      </h2>
+      <p class="text-slate-400 text-base md:text-lg max-w-2xl mx-auto">
+        Diseñada para los módulos de <strong>Sistemas, Redes y Servicios de ASIR</strong>. Configurada para desarrollar proyectos tecnológicos eco-eficientes: telemetría ambiental con MQTT, auditorías de consumo en Vatios con PowerTOP y Scaphandre, contenedores ligeros y automatización con un <strong>Tutor de IA Socrático</strong> especializado en infraestructuras verdes.
+      </p>
+
+      <!-- Download Button -->
+      <div class="pt-6">
+        <a href="https://github.com/balejosg/archlinux-vm-asir/releases/download/v1.0.0/ArchLinux-ASIR.ova" 
+           class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 font-bold text-white shadow-xl shadow-emerald-500/25 hover:shadow-emerald-500/40 transition transform hover:-translate-y-0.5 active:translate-y-0 text-lg">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+          </svg>
+          Descargar ArchLinux-ASIR.ova (v1.0.0)
+          <span class="text-xs bg-white/20 px-2.5 py-1 rounded-full font-medium ml-1">1.8 GB</span>
+        </a>
+        <p class="text-xs text-slate-500 mt-2">Compatible con VirtualBox 7.x en Windows, macOS y Linux</p>
+      </div>
+
+      <!-- Case Study Banner -->
+      <div class="pt-2">
+        <a href="como-se-hizo.html" class="inline-flex items-center gap-2 text-xs text-emerald-300 hover:text-emerald-200 bg-emerald-950/40 border border-emerald-800/40 px-3.5 py-1.5 rounded-full transition hover:border-emerald-700">
+          <span>✨</span> ¿Quieres ver cómo se adaptó esta versión para ASIR y Sostenibilidad con IA? <strong class="underline">Lee el caso de estudio</strong> &rarr;
+        </a>
+      </div>
+    </div>
+
+    <!-- ASIR Green IT Highlights Card -->
+    <div class="mt-12 bg-gradient-to-br from-emerald-950/40 via-slate-900 to-slate-900 border border-emerald-800/40 rounded-2xl p-6 md:p-8 shadow-xl">
+      <h3 class="text-xl font-bold text-white flex items-center gap-2 mb-4">
+        <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        🌿 Pilares Tecnológicos: ASIR + Sostenibilidad
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm mt-6">
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-4 space-y-2">
+          <h4 class="font-bold text-emerald-300 flex items-center gap-1.5">
+            <span>⚡</span> Green IT & Auditoría de Potencia
+          </h4>
+          <p class="text-xs text-slate-400">
+            Mide el gasto real en <strong>Vatios (W)</strong>, calcula gramos de <strong>CO2eq</strong> y gestiona frecuencias de CPU con <code>powertop</code>, <code>cpupower</code> y telemetría RAPL del procesador para evitar derroches energéticos en servidores.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-4 space-y-2">
+          <h4 class="font-bold text-emerald-300 flex items-center gap-1.5">
+            <span>📡</span> Redes IoT & Protocolos Ligeros
+          </h4>
+          <p class="text-xs text-slate-400">
+            Broker <strong>Eclipse Mosquitto (MQTT)</strong> preinstalado y librerías en Python (<code>paho-mqtt</code>) para sensorización ambiental (CO2, temperatura, consumo eléctrico) sin la sobrecarga térmica y de red de HTTP.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-4 space-y-2">
+          <h4 class="font-bold text-emerald-300 flex items-center gap-1.5">
+            <span>🐳</span> Contenedores Eco-Diseñados
+          </h4>
+          <p class="text-xs text-slate-400">
+            <strong>Docker & Docker Compose</strong> configurados de serie con el usuario <code>alumno</code> en el grupo docker. Plantillas basadas en imágenes mínimas (Alpine) y limitación estricta de CPU y RAM.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-4 space-y-2">
+          <h4 class="font-bold text-emerald-300 flex items-center gap-1.5">
+            <span>🧠</span> Tutor Socrático de Sistemas (Green SysAdmin)
+          </h4>
+          <p class="text-xs text-slate-400">
+            Los agentes de IA (<strong class="text-white">Antigravity CLI</strong> y <strong class="text-white">OpenCode</strong>) están instruidos para <strong>no dar la solución directa</strong>. Guían con preguntas sobre permisos, puertos, subredes virtuales y eficiencia energética.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ready-to-Use Projects Catalog -->
+    <div class="mt-8 bg-slate-800/60 border border-slate-700/80 rounded-2xl p-6 md:p-8 backdrop-blur shadow-xl">
+      <h3 class="text-xl font-bold text-white flex items-center gap-2 mb-6">
+        <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+        </svg>
+        📁 Catálogo de Proyectos Prácticos de Sostenibilidad Incluidos
+      </h3>
+
+      <div class="space-y-4">
+        <!-- Project 1 -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div class="space-y-1">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-bold text-emerald-400 bg-emerald-950 border border-emerald-800 px-2 py-0.5 rounded">Proyecto 1</span>
+              <h4 class="font-bold text-white text-sm">Smart Campus IoT (MQTT + InfluxDB + Grafana)</h4>
+            </div>
+            <p class="text-xs text-slate-400">
+              Despliegue contenerizado de un broker Mosquitto con simulador de telemetría de CO2 y consumo eléctrico en aulas, emitiendo alertas de ventilación y detección de luces encendidas sin presencia humana.
+            </p>
+          </div>
+          <span class="text-xs text-slate-500 font-mono shrink-0">~/trabajo/plantillas-sostenibilidad/01-smart-campus-iot-mqtt</span>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div class="space-y-1">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-bold text-teal-400 bg-teal-950 border border-teal-800 px-2 py-0.5 rounded">Proyecto 2</span>
+              <h4 class="font-bold text-white text-sm">Auditoría Energética & Huella de Carbono Digital</h4>
+            </div>
+            <p class="text-xs text-slate-400">
+              Herramienta en Python para auditar el consumo en Vatios y Joules de servicios web en tiempo real, calculando la emisión de gramos de CO2eq según el mix eléctrico peninsular y evaluando estrés térmico.
+            </p>
+          </div>
+          <span class="text-xs text-slate-500 font-mono shrink-0">~/trabajo/plantillas-sostenibilidad/02-green-metrics-scaphandre</span>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div class="space-y-1">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-bold text-cyan-400 bg-cyan-950 border border-cyan-800 px-2 py-0.5 rounded">Proyecto 3</span>
+              <h4 class="font-bold text-white text-sm">Eco-Power-Manager con systemd (Gobernadores de CPU)</h4>
+            </div>
+            <p class="text-xs text-slate-400">
+              Automatización de políticas del sistema operativo mediante <code>systemd.timer</code> para conmutar gobernadores a <code>powersave</code> en horas nocturnas y detectar procesos parásitos que recalientan el servidor.
+            </p>
+          </div>
+          <span class="text-xs text-slate-500 font-mono shrink-0">~/trabajo/plantillas-sostenibilidad/03-auto-power-management</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Credentials Card -->
+    <div class="mt-8 bg-slate-800/60 border border-slate-700/80 rounded-2xl p-6 md:p-8 backdrop-blur shadow-xl">
+      <h3 class="text-xl font-bold text-white flex items-center gap-2 mb-6">
+        <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/>
+        </svg>
+        Credenciales y Puertos Mapeados
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-4 flex items-center justify-between">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Usuario</span>
+            <p class="text-lg font-bold text-emerald-300">alumno</p>
+          </div>
+          <button onclick="navigator.clipboard.writeText('alumno')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1.5 rounded-lg border border-slate-700 transition">Copiar</button>
+        </div>
+
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-4 flex items-center justify-between">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Contraseña</span>
+            <p class="text-lg font-bold text-emerald-300">alumno</p>
+          </div>
+          <button onclick="navigator.clipboard.writeText('alumno')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1.5 rounded-lg border border-slate-700 transition">Copiar</button>
+        </div>
+
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-4">
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Privilegios Administrador</span>
+          <p class="text-sm font-semibold text-emerald-400 mt-0.5">sudo habilitado (contraseña: alumno)</p>
+        </div>
+
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-4">
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Conexión SSH</span>
+          <p class="text-sm font-semibold text-amber-400 mt-0.5">Puerto 2222 (ssh -p 2222 alumno@127.0.0.1)</p>
+        </div>
+
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-4">
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Broker MQTT (Mosquitto)</span>
+          <p class="text-sm font-semibold text-cyan-300 mt-0.5">Puerto 1883 en localhost</p>
+        </div>
+
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-4">
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Dashboards Grafana</span>
+          <p class="text-sm font-semibold text-teal-300 mt-0.5">http://localhost:3000 (admin / admin)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shared Folder Section -->
+    <div class="mt-8 bg-slate-800/60 border border-slate-700/80 rounded-2xl p-6 md:p-8 backdrop-blur shadow-xl">
+      <h3 class="text-xl font-bold text-white flex items-center gap-2 mb-4">
+        <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
+        </svg>
+        📁 Conexión con tu Editor en el Host (<code class="text-emerald-300">~/trabajo</code>)
+      </h3>
+      <p class="text-sm text-slate-300 mb-6">
+        Edita tus scripts en VS Code o tu editor favorito en tu ordenador y compártelos en tiempo real con la máquina virtual:
+      </p>
+
+      <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-5 space-y-3 text-sm text-slate-300">
+        <ol class="list-decimal list-inside space-y-2 text-slate-300 text-xs md:text-sm">
+          <li>En VirtualBox: <strong>Dispositivos ➡️ Carpetas compartidas ➡️ Preferencias de carpetas compartidas...</strong></li>
+          <li>Añadir carpeta (+):
+            <ul class="list-disc list-inside ml-5 mt-1 space-y-1 text-slate-400">
+              <li><strong>Ruta:</strong> Tu carpeta de proyectos en el ordenador anfitrión.</li>
+              <li><strong>Nombre:</strong> <strong class="text-emerald-300">trabajo</strong></li>
+              <li>Marca: <strong>Automontar</strong> y <strong>Hacer permanente</strong>.</li>
+            </ul>
+          </li>
+          <li>Pulsa <strong>Aceptar</strong>. En la terminal de la VM ejecuta <code class="bg-slate-800 text-white px-2 py-0.5 rounded font-mono">montar-trabajo</code> (o reinicia).</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Instructions -->
+    <div class="mt-8 bg-slate-800/40 border border-slate-800 rounded-2xl p-6 md:p-8">
+      <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+        <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+        </svg>
+        Paso a paso: Instalación y arranque
+      </h3>
+
+      <div class="space-y-6">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">1</div>
+          <div>
+            <h4 class="font-semibold text-white">Descarga el archivo</h4>
+            <p class="text-sm text-slate-400">Haz clic en el botón superior para descargar <code class="text-emerald-300 bg-slate-900 px-1.5 py-0.5 rounded">ArchLinux-ASIR.ova</code>.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">2</div>
+          <div>
+            <h4 class="font-semibold text-white">Importa en VirtualBox</h4>
+            <p class="text-sm text-slate-400">Abre VirtualBox y haz doble clic en el archivo descargado. Pulsa <strong>Importar</strong>.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">3</div>
+          <div>
+            <h4 class="font-semibold text-white">Inicia la máquina</h4>
+            <p class="text-sm text-slate-400">Selecciona <strong>ArchLinux-ASIR</strong> en VirtualBox y haz clic en <strong>Iniciar</strong>.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center font-bold text-sm shrink-0 mt-0.5">4</div>
+          <div class="w-full">
+            <h4 class="font-semibold text-white">Conéctate por SSH</h4>
+            <div class="bg-slate-950 border border-slate-800 rounded-xl p-3 flex items-center justify-between mt-1">
+              <code class="text-xs md:text-sm text-emerald-400">ssh -p 2222 alumno@127.0.0.1</code>
+              <button onclick="navigator.clipboard.writeText('ssh -p 2222 alumno@127.0.0.1')" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 px-2.5 py-1 rounded border border-slate-700 transition">Copiar</button>
+            </div>
+            <p class="text-xs text-slate-500 mt-1">Contraseña: <code class="text-emerald-300">alumno</code></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-center text-xs text-slate-500 py-6 border-t border-slate-800">
+      <p>Material docente para Ciclo Superior de ASIR (Administración de Sistemas Informáticos en Red) • Proyectos Tecnológicos de Sostenibilidad & Green IT.</p>
+    </footer>
+  </main>
+
+</body>
+</html>

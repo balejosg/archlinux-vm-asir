@@ -1,0 +1,14 @@
+[Unit]
+Description=Gestor Automatizado de Sostenibilidad y Ahorro Energetico (ASIR)
+Documentation=https://github.com/balejosg/archlinux-vm-asir
+After=network.target
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/home/alumno/trabajo/plantillas-sostenibilidad/03-auto-power-management/eco-power-manager.sh
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
